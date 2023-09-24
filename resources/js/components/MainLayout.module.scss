@@ -1,0 +1,36 @@
+@import "/resources/scss/__colors.scss";
+@import "/resources/scss/__main.scss";
+
+.mainLayout {
+  font-family: roboto;
+  position: relative;
+  min-height: calc(100vh - ($mainNavigationHeaderHeight + $mainFooterHeight));
+  background-color: $primary;
+
+  .mainContent {
+    background-color: $pLight;
+    padding: $mainContentPadding;
+    min-height: calc(100vh - ($mainNavigationHeaderHeight + $mainFooterHeight));
+    box-shadow: 0px 4px 8px $pDark;
+    margin-top: $mainNavigationHeaderHeight;
+
+    @media screen and (min-width: 768px) {
+      margin: $mainNavigationHeaderHeight auto 0 auto;
+      width: 75vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 $standardSpace * 2;
+    }
+  }
+
+  &.notLogin .mainContent {
+    padding: 0;
+    max-height: calc(100vh - ($mainNavigationHeaderHeight + $mainFooterHeight));
+  }
+
+  .footer {
+    height: $mainFooterHeight;
+    @include sLight;
+  }
+}

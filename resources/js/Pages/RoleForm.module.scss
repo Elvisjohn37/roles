@@ -1,0 +1,36 @@
+@import "/resources/scss/__main.scss";
+@import "/resources/scss/__colors.scss";
+@import "/resources/scss/__helper.scss";
+
+.roleForm {
+  padding: $standardSpace * 8;
+  box-shadow: 0px 4px 8px rgba(#000000, 0.5);
+  border-radius: $standardRadius;
+  
+  @include center;
+  .formContainer {
+
+    .formGroup {
+      margin: $standardSpace * 2 0;
+
+      &:last-of-type {
+        margin-top: $standardSpace * 2;
+      }
+
+      .selectedRoles {
+        padding: $standardSpace /2;
+        border: 1px solid $pDark;
+        border-radius: $standardRadius;
+        margin-top: $standardSpace;
+
+        .chip {
+          margin: $standardSpace / 2 $standardSpace / 4;
+        }
+      }
+    }
+
+    .errorMessage {
+      margin-top: $standardSpace * 2;
+    }
+  }
+}

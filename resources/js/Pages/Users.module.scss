@@ -1,0 +1,18 @@
+@import "/resources/scss/__main.scss";
+@import "/resources/scss/__colors.scss";
+@import "/resources/scss/__helper.scss";
+
+.users {
+  display: inline-block;
+  width: 100%;
+
+  .actionBar {
+    padding: $standardSpace;
+  }
+
+  .user {
+    margin: $standardSpace / 2;
+    display: inline-block;
+    width: calc(25% - $standardSpace);
+  }
+}

@@ -1,0 +1,42 @@
+@import "/resources/scss/__main.scss";
+@import "/resources/scss/__colors.scss";
+
+.mainNavigation {
+  height: $mainNavigationHeaderHeight;
+  line-height: $mainNavigationHeaderHeight;
+  padding: 0 $standardSpace * 4;
+  background-color: $secondary;
+  box-shadow: 0px 2px 4px darken($pDark, 10);
+  color: $sText;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: roboto;
+  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+
+  .brandSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .brand,
+    a {
+      font-size: 20px;
+      margin-left: $standardSpace;
+      font-family: roboto;
+      font-weight: 700;
+
+      a {
+        font-size: 20px;
+        color: $sText;
+        font-family: roboto;
+        font-weight: 700;
+      }
+    }
+  }
+}
