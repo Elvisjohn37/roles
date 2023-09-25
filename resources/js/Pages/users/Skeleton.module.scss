@@ -1,0 +1,12 @@
+@import "/resources/scss/__main.scss";
+
+.Skeleton {
+  margin: $standardSpace 0;
+  display: inline-block;
+  width: calc(25% - ($standardSpace));
+  margin: $standardSpace / 2;
+
+  & div {
+    height: 100px;
+  }
+}

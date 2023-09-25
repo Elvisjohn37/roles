@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 Make sure that you have composer installed in your local machine:
 
-Import the sql file named("tasksmanagement.sql") in the project root directory
+Import the sql file named("rolesmanagement.sql") in the project root directory
 
 ### `npm install`
 
@@ -24,7 +24,7 @@ Make a copy of .env.example and rename it as .env
 
 Go to the .env file.
 
-Edit the DB_DATABASE=laravel to DB_DATABASE=tasksmanagement then save.
+Edit the DB_DATABASE=laravel to DB_DATABASE=rolesmanagement then save.
 
 Start the laravel frameword.
 

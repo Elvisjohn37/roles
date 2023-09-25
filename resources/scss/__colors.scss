@@ -25,3 +25,9 @@ $sText: #ffffff;
     background-color: $sLight;
     opacity: $opacity;
 }
+
+@mixin sDark($opacity: 1) {
+    color: $sText;
+    background-color: $sDark;
+    opacity: $opacity;
+}

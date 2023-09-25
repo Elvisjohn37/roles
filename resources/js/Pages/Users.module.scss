@@ -14,5 +14,9 @@
     margin: $standardSpace / 2;
     display: inline-block;
     width: calc(25% - $standardSpace);
+
+    .typography {
+      margin: $standardSpace 0;
+    }
   }
 }

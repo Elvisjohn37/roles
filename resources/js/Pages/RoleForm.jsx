@@ -40,7 +40,6 @@ const RoleForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // validateEmptyFields();
     if (invalidFields.length === 0) {
       setIsLoading(true);
       addUser({
@@ -52,7 +51,6 @@ const RoleForm = () => {
           email: email,
         },
         success: (response) => {
-          // dispatch(addUserAction(response.data));
           setIsRedirect(true);
         },
         error: (response) =>
@@ -97,16 +95,6 @@ const RoleForm = () => {
       setInvalidFields(fieldsExcepEmail);
     }
   };
-
-  // const validateEmptyFields = () => {
-  //   const tempInvalidFields = [];
-  //   !fullName.firstName && tempInvalidFields.push("firstName");
-  //   !fullName.middleName && tempInvalidFields.push("middleName");
-  //   !fullName.lastName && tempInvalidFields.push("lastName");
-  //   !email && tempInvalidFields.push("email");
-  //   !role && tempInvalidFields.push("role");
-  //   setInvalidFields(tempInvalidFields);
-  // };
 
   const handleFirstNameChange = (event) => {
     validateField("firstName", event.target.value);
